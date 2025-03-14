@@ -71,15 +71,15 @@
   <div id="content" class="content">
     <h1 class="title">局域网通讯App隐私政策</h1>
     <p>
-      <b>更新日期：2024 年 8 月 22 日</b> <br>
-      <b>生效日期：2024 年 8 月 22 日</b>
+      <b>更新日期：2025 年 3 月 14 日</b> <br>
+      <b>生效日期：2025 年 3 月 14 日</b>
     </p>
 
     <div id="outline-container-org1aa507e" class="outline-2">
       <h2 id="org1aa507e">导言</h2>
       <div class="outline-text-2" id="text-org1aa507e">
         <p>
-          局域网通讯App（下文简称<b>App</b>）由<b>suhoge.dev@gmail.com </b>(下文简称<b>“我们”</b>) 开发并运营的。我们非常重视保护用户(以下简称 <b>“您”</b> )
+          局域网通讯App（下文简称<b>App</b>）由<b>蓝图信息科技工作室</b>(下文简称<b>“我们”</b>) 开发并运营的。我们非常重视保护用户(以下简称 <b>“您”</b> )
           的个人信息和隐私。您在使用App时，我们会收集、使用、保存、共享您的相关个人信息。为呈现我们处理您个人信息的情况，我们特制定《局域网通讯App隐私政策》(以下简称 <b>“隐私政策”</b> )
           ，我们承诺严格按照本隐私政策处理您的个人信息。
         </p>
@@ -145,10 +145,10 @@
         </div>
 
         <div id="outline-container-orgb68336c" class="outline-4">
-          <h4 id="orgb68336c">2. 获取局域网设备、创建本地http服务</h4>
+          <h4 id="orgb68336c">2. 识别同一个WLAN下的设备、本地http服务</h4>
           <div class="outline-text-4" id="text-orgb68336c">
             <p>
-              为了获取局域网内的其他设备，需要获取WiFi信息，包括bssid、ssid，这些信息会上传服务器，为了创建本地http服务需要获取局域网ip。Android 9及以上获取WiFi信息需要定位权限，我们不会获取您的位置信息。
+              为了识别局域网内的其他设备，需要获取<b>WiFi信息</b>，包括bssid、ssid，为了其他设备能够访问本地http服务需要获取<b>局域网IP和热点IP</b>。WiFi信息和局域网IP会上传服务器。Android 9及以上获取WiFi信息需要定位权限，我们不会获取您的位置信息。
             </p>
           </div>
         </div>
@@ -158,11 +158,10 @@
           <h4 id="org6d58b85">3. 收发消息和文件</h4>
           <div class="outline-text-4" id="text-org6d58b85">
             <p>
-              当您与其他设备收发消息和文件时，消息内容会被加密传输到服务器，服务器会转发给接收者，但不会存储这些信息。发送和接收文件时，文件会通过本地http服务或者p2p协议传输给接收者，服务器不会存储文件。
+              当您与其他设备收发消息和文件时，消息内容会被加密传输到服务器，服务器会转发给接收者，但不会存储这些信息。发送和接收文件时，文件会通过本地http服务或者p2p协议传输给接收者，服务器不会存储文件。当您使用发送已安装应用apk功能时，会获取已安装应用信息，App和服务器都不会存储这些信息。
             </p>
           </div>
         </div>
-      </div>
 
       <div  class="outline-4">
         <h4 >4. 修改头像和昵称</h4>
@@ -173,24 +172,17 @@
         </div>
       </div>
 
+
       <div  class="outline-4">
-        <h4 >5. 对讲机</h4>
+        <h4 >5. bug反馈</h4>
         <div class="outline-text-4" id="text-orgb68336c">
           <p>
-            当您使用对讲机功能时，App会录制您的语音，语音文件会通过本地http服务或者p2p协议传输给接收者，服务器不会存储这些语音文件。
+            日志会记录收发的消息和发生错误的信息，当您使用反馈bug功能时，可以选择是否将日志文件发送到服务器。
           </p>
         </div>
       </div>
 
-      <div  class="outline-4">
-        <h4 >6. bug反馈</h4>
-        <div class="outline-text-4" id="text-orgb68336c">
-          <p>
-            日志会记录收发的消息和发生错误的信息，当您使用反馈bug功能时，可以选择是否将日志文件发送到服务器，以便我们排查bug。
-          </p>
-        </div>
       </div>
-
       <div id="outline-container-orgc350ec3" class="outline-3">
         <h3 id="orgc350ec3">(二) 设备权限调用情况</h3>
         <div class="outline-text-3" id="text-orgc350ec3">
@@ -238,7 +230,19 @@
 
               <tr>
                 <td class="org-left">麦克风权限</td>
-                <td class="org-left">对讲机功能</td>
+                <td class="org-left">对讲机、音频通话功能</td>
+                <td class="org-left">是</td>
+                <td class="org-left">可</td>
+              </tr>
+			  <tr>
+                <td class="org-left">照相机权限</td>
+                <td class="org-left">视频通话功能</td>
+                <td class="org-left">是</td>
+                <td class="org-left">可</td>
+              </tr>
+			  <tr>
+                <td class="org-left">获取已安装应用权限</td>
+                <td class="org-left">发送已安装应用apk</td>
                 <td class="org-left">是</td>
                 <td class="org-left">可</td>
               </tr>
@@ -571,7 +575,7 @@
       <div class="outline-text-2" id="text-org9b55825">
         <p>
           如果您对本政策或个人信息保护有任何问题，您可以将您的疑问、意见或建议发送至 <a
-            href="mailto:suhoge.dev@gmail.com">suhoge.dev@gmail.com</a>。一般情况下，我们将在十五个工作日内回复。
+            href="mailto:suhoge@126.com">suhoge@126.com</a>。一般情况下，我们将在十五个工作日内回复。
         </p>
       </div>
     </div>

@@ -67,7 +67,7 @@
   </style>
   <script>
     if ((navigator.language || navigator.browserLanguage).indexOf('zh') == 0) {
-      window.location.href = "https://suhoge.github.io/ws_privacy_zh.html";
+      window.location.href = window.location.href.replace("privacy", "privacy_zh");
     }
   </script>
 </head>
@@ -76,8 +76,8 @@
   <div id="content" class="content">
     <h1 class="title">Wlan Share App Privacy Policy</h1>
     <p>
-      <b>Last updated on Aug 22, 2024</b> <br>
-      <b>Effective on Aug 22, 2024</b>
+      <b>Last updated on March 14, 2025</b> <br>
+      <b>Effective on Aug March 14, 2025</b>
     </p>
 
 
@@ -85,7 +85,7 @@
       <h2 id="org4b3b59b">Introduction</h2>
       <div class="outline-text-2" id="text-org4b3b59b">
         <p>
-          Wlan Share App is developed and operated by <b>suhoge.dev@gmail.com</b> (hereinafter referred to as "we",
+          Wlan Share App is developed and operated by <b>Blueprint Information Technology Studio</b> (hereinafter referred to as "we",
           "us", "our"). We attach great importance to protecting the personal information and privacy of users
           (hereinafter referred to as <b>"you"</b>). When you use App, we will collect, use, save, and share your
           personal information. In order to show our handling of your personal information, we have formulated the "Wlan
@@ -153,10 +153,10 @@
         </div>
 
         <div id="outline-container-org3c0756e" class="outline-4">
-          <h4 id="org3c0756e">2. Retrieve WLAN devices and create local HTTP services</h4>
+          <h4 id="org3c0756e">2. Identify devices connected to the same WLAN, local http server</h4>
           <div class="outline-text-4" id="text-org3c0756e">
             <p>
-              In order to retrieve other devices within WLAN, it is necessary to obtain WiFi information, including bssid and ssid, which will be uploaded to the server. In order to create local HTTP services, it is necessary to obtain the WLAN IP address. Android 9 and above require location permission to obtain WiFi information, and we will not retrieve your location information.
+              In order to identify other devices connected to WLAN, it is necessary to obtain <b>WiFi information</b>, including bssid and ssid, In order for other devices to access the local HTTP server, <b>WLAN IP and hotspot IP</b> is required. WiFi information and WLAN IP will be uploaded to the server. Android 9 and above require location permission to obtain WiFi information, and we will not retrieve your location information.
             </p>
           </div>
         </div>
@@ -165,7 +165,7 @@
           <h4 id="orgf01cff3">3. Sending and receiving messages and files</h4>
           <div class="outline-text-4" id="text-orgf01cff3">
             <p>
-              When you send and receive messages and files with other devices, the message content is encrypted and transmitted to the server, which forwards it to the recipient but does not store this information. When sending and receiving files, the files will be transmitted to the recipient through local HTTP services or P2P protocols, and the server will not store the files.
+              When you send and receive messages and files with other devices, the message content is encrypted and transmitted to the server, which forwards it to the recipient but does not store this information. When sending and receiving files, the files will be transmitted to the recipient through local HTTP services or P2P protocols, and the server will not store the files.When you use the function to send apk of the installed application, the information of the installed applications will be obtained, and neither the App nor the server will store this information.
             </p>
           </div>
         </div>
@@ -179,20 +179,12 @@
           </div>
         </div>
   
-        <div  class="outline-4">
-          <h4 >5. walkie-talkie</h4>
-          <div class="outline-text-4" id="text-orgb68336c">
-            <p>
-              When you use the walkie talkie function, the app will record your voice, and the voice files will be transmitted to the receiver through local HTTP services or P2P protocols. The server will not store these voice files.
-            </p>
-          </div>
-        </div>
   
         <div  class="outline-4">
-          <h4 >6. Bug report</h4>
+          <h4 >5. Bug report</h4>
           <div class="outline-text-4" id="text-orgb68336c">
             <p>
-              The log will record the messages sent and received and errors that occurred. When you use the bug report function, you can choose whether to send the log file to the server for us to troubleshoot the bug.
+              The log will record the messages sent and received and errors that occurred. When you use the bug report function, you can choose whether to send the log file to the server.
             </p>
           </div>
         </div>
@@ -235,23 +227,34 @@
                 <td class="org-left">Network permission</td>
                 <td class="org-left">Access networks</td>
                 <td class="org-left">No</td>
-                <td class="org-left">No</td>
+                <td class="org-left">YES</td>
               </tr>
 
               <tr>
                 <td class="org-left">Storage permission</td>
                 <td class="org-left">Sending and receiving files, uploading avatars</td>
                 <td class="org-left">YES</td>
-                <td class="org-left">Yes</td>
+                <td class="org-left">YES</td>
               </tr>
 
               <tr>
                 <td class="org-left">Microphone permission</td>
-                <td class="org-left">walkie-talkie function</td>
+                <td class="org-left">walkie-talkie and audio call function</td>
                 <td class="org-left">YES</td>
-                <td class="org-left">Yes</td>
+                <td class="org-left">YES</td>
               </tr>
-
+			  <tr>
+                <td class="org-left">Camera permission</td>
+                <td class="org-left">Video call</td>
+                <td class="org-left">YES</td>
+                <td class="org-left">YES</td>
+              </tr>
+			  <tr>
+                <td class="org-left">Installed application information permissions</td>
+                <td class="org-left">Send apk of the installed app</td>
+                <td class="org-left">YES</td>
+                <td class="org-left">YES</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -636,7 +639,7 @@
       <div class="outline-text-2" id="text-org8f4e677">
         <p>
           If you have any questions about this policy or the protection of personal information, you can send your
-          questions, comments or suggestions to <a href="mailto:suhoge.dev@gmail.com">suhoge.dev@gmail.com</a>. Under
+          questions, comments or suggestions to <a href="mailto:suhoge@126.com">suhoge@126.com</a>. Under
           normal circumstances, we will reply within fifteen working days.
         </p>
       </div>
